@@ -42,6 +42,8 @@ spec:
       labels:
         app: azure-vote-front
     spec:
+      imagePullSecrets:
+      - name: acr-secret
       containers:
       - name: azure-vote-front
         image: njeacr.azurecr.io/azure-vote-front:v1
